@@ -1,0 +1,14 @@
+type Music {
+  id: Int!
+  name: String
+}
+
+type Singer {
+  id: Int!
+  name: String!
+}
+
+type Query {
+  getMusic: [Music!]
+  getSinger: [Singer!]
+}
