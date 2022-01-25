@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "generate": "ts-node ./generator.ts"
+    "generate:graphql": "ts-node ./generator.ts",
+    "generate:openapi": "openapi-typescript ./openapi/*.yaml --output schema.ts"
   },
   "author": "",
   "license": "ISC",
@@ -13,6 +14,7 @@
     "@graphql-tools/load-files": "^6.5.3",
     "graphql": "^15.8.0",
     "graphql-tools": "^8.2.0",
+    "openapi-typescript": "^5.1.1",
     "ts-node": "^10.4.0"
   }
 }
